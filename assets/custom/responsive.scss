@@ -1,0 +1,28 @@
+
+@media only screen and (min-width : 1024px) and (max-width : 1299px) {
+header .header-section .row .header-left .logo {
+  margin-top: .9rem;
+  margin-left: 4rem;
+    h1{
+      font-size: 2rem!important;
+    }
+  }
+  header .header-section .row .header-left .menu-side-overlay .menu-bar-wrapper .menu-links{
+    left: -30px;
+  }
+  header .header-section .row .header-left .menu-side-overlay .menu-bar-wrapper .menu-links{
+    ul{
+    li{
+      font-size: 2.5vw;
+    }
+  }
+  }
+  &.inner li{
+    line-height: 2.1rem;
+  }
+}
+@media only screen and (min-width : 1300px) and (max-width : 1650px) {
+.logo {
+    margin-left: 4rem;
+  }
+}
