@@ -5,13 +5,13 @@
   <base href="" />
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Vigorizante Profile</title>
+  <title>Max Power + Profile</title>
   <link rel="shortcut icon" type="image/png" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/custom/style.min.css">
-  <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/slick.css">
   <link rel="stylesheet" href="assets/css/slick-theme.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -19,276 +19,172 @@
 <body>
 
   <header>
-    <!-- <div class="back-logo">
-    <h1>Vigorizante</h1>
-  </div> -->
-  <div class="header-section">
-    <div class="row">
-      <div class="col-lg-3 pr-0 wow animated slideInLeft"  data-wow-delay="0.8s">
-        <div class="header-left">
-          <div class="scroll wow animated fadeIn" data-wow-delay="3.5s"></div>
-          <div class="menu-bar">
-            <span class="bars"></span>
-          </div>
-          <div class="logo">
-            <h1>Vigorizante</h1>
-          </div>
-          <div class="header-text">
-            <h1>Your Account</h1>
-            <!-- <div class="header-btn">
-              <button onclick="targrtLink()">view</button>
-            </div> -->
-          </div>
-          <div class="menu-side-overlay">
-            <div class="close-menu-icon">
-              <i class="far fa-times-circle"></i>
-              <div class="menu-bar-wrapper">
-                <div class="menu-links inner">
-                  <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="products.html">products</a></li>
-                    <li><a href="contact-us.html">contact us</a></li>
-                    <li><a href="about-us.html">about us</a></li>
-                    <li><a href="faq.html">FAQ's</a></li>
-                    <li><a href="terms.html">terms and conditions</a></li>
-                    <li><a href="privacy.html">privacy policy</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="home.html">home</a></li>
+          <li><a href="products.html">products</a></li>
+          <li><a href="contact-us.html">contact us</a></li>
+          <li><a href="about-us.html">about us</a></li>
+          <li><a href="faq.html">FAQ's</a></li>
+          <li><a href="terms.html">terms and conditions</a></li>
+          <li><a href="privacy.html">privacy policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="cart-section" id="targrtLink">
+    <div class="container">
+      <div class="cart-title">
+        <h1>Your Account</h1>
       </div>
-      <div class="col-lg-9 pl-0">
-        <div class="header-right wow animated slideInRight"  data-wow-delay="0.8s">
-          <div class="login-link">
-            <a href="javascript:void(0)" class="login-btn">Login /</a><a href="javascript:void(0)" class="signup-btn"> Signup</a>
+      <div class="content-box">
+    <div class="box-title">
+      <h3>Customer Profile</h3>
+    </div>
+    <div class="form-deliver col-lg-12">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="name">FIRST AND LAST NAME</label>
+            <p class="profile-p">Ammar</p>
           </div>
-          <div class="login-register-wrapper login-target">
-            <div class="close-login-icon">
-              <i class="far fa-times-circle"></i>
-            </div>
-            <div class="login-form">
-              <div class="form-title">
-                <h1>login</h1>
-              </div>
-              <form action="" class="login-sec">
-                <div class="form-field">
-                  <input type="text" name="username" value="" placeholder="Username or email...">
-                </div>
-                <div class="form-field">
-                  <input type="password" name="pass" value="" placeholder="Password...">
-                </div>
-                <button type="submit">login</button>
-                <div class="external-login">
-                  <p>or login with</p>
-                  <div class="social-login">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                  </div>
-                </div>
-                <div class="ask-signup">
-                  <p>not registered yet? <a href="javascript:void(0)" id="trigger-signup">Signup</a></p>
-                </div>
-              </form>
-            </div>
+          <div class="form-group col-md-6">
+            <label for="number">RESIDENCE NUMBER</label>
+            <p class="profile-p">6445695246</p>
           </div>
-          <div class="login-register-wrapper signup-target">
-            <div class="close-login-icon">
-              <i class="far fa-times-circle"></i>
-            </div>
-            <div class="login-form">
-              <div class="form-title">
-                <h1>Signup</h1>
-              </div>
-              <form action="" class="signup-sec">
-                <div class="form-field">
-                  <input type="text" name="username" value="" placeholder="Full Name...">
-                  <i class="fas fa-asterisk" aria-hidden></i>
-                </div>
-                <div class="form-field">
-                  <input type="text" name="username" value="" placeholder="Username">
-                </div>
-                <div class="form-field">
-                  <input type="email" name="email" value="" placeholder="Email...">
-                  <i class="fas fa-asterisk" aria-hidden></i>
-                </div>
-                <div class="form-field">
-                  <input type="password" name="pass" value="" placeholder="Password">
-                  <i class="fas fa-asterisk" aria-hidden></i>
-                </div>
-                <div class="form-field">
-                  <input type="password" name="pass" value="" placeholder="Confirm Password">
-                  <i class="fas fa-asterisk" aria-hidden></i>
-                </div>
-                <div class="form-field">
-                  <select class="" name="">
-                    <option value="0">Select country code</option>
-                    <option value="0">+970</option>
-                    <option value="0">+546</option>
-                  </select>
-                </div>
-                <div class="form-field">
-                  <input type="number" name="number" value="" placeholder="Mobile Number">
-                </div>
-                <button type="submit">Signup</button>
-                <div class="ask-signup mt-lgg">
-                  <p>already have an account? <a href="javascript:void(0)" id="trigger-login">Login</a></p>
-                </div>
-              </form>
-            </div>
-          </div>
-          <section class="cart-section" id="targrtLink">
-            <div class="container">
-              <!-- <div class="cart-title">
-                <h1>Your Account</h1>
-              </div> -->
-              <div class="content-box">
-            <div class="box-title">
-              <h3>Customer Profile</h3>
-            </div>
-            <div class="form-deliver col-lg-12">
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="name">FIRST AND LAST NAME</label>
-                    <p class="profile-p">Ammar</p>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="number">RESIDENCE NUMBER</label>
-                    <p class="profile-p">6445695246</p>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="street">STREET</label>
-                    <p class="profile-p">Al wuheida abu hail dubai</p>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="address">2ND LINE ADDRESS</label>
-                    <p class="profile-p">Abu dhabi</p>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="code">POST CODE</label>
-                    <p class="profile-p">00000</p>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="city">LOCALITY/CITY</label>
-                    <p class="profile-p">Dubai</p>
-                  </div>
-                </div>
-                <div class="text-right mr-3">
-                  <a href="#" class="update-profile"><i class="fas fa-pencil-alt"></i> update</a>
-                  <a href="#" data-toggle="modal" data-target="#changePass" class="update-profile"><i class="fa fa-cog"></i> change password</a>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="content-box">
-            <div class="box-title">
-              <h3>Order History</h3>
-            </div>
-            <div class="address col-lg-12">
-              <div class="row">
-                <table class="table cart-table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Product</th>
-                      <th scope="col">Order Id</th>
-                      <th scope="col">Quantity</th>
-                      <th scope="col">Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Product</th>
-                      <td>23152</td>
-                      <td>5</td>
-                      <td>25-02-2018</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Product</th>
-                      <td>23152</td>
-                      <td>5</td>
-                      <td>25-02-2018</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Product</th>
-                      <td>23152</td>
-                      <td>5</td>
-                      <td>25-02-2018</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Product</th>
-                      <td>23152</td>
-                      <td>5</td>
-                      <td>25-02-2018</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-            </div>
-          </section>
-
         </div>
-
-        <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="footer-links">
-                  <h4>contact us</h4>
-                  <ul>
-                    <li><a href="mailto:info@vigorizante.com">info@vigorizante.com</a></li>
-                    <li><a href="#">+9741 263 562</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="footer-links">
-                  <h4>Explore</h4>
-                  <ul>
-                    <li><a href="about-us.html">about us</a></li>
-                    <li><a href="contact-us.html">contact us</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="footer-links">
-                  <h4>legal</h4>
-                  <ul>
-                    <li><a href="privacy.html">privacy policy</a></li>
-                    <li><a href="terms.html">terms and conditions</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <i class="fab fa-facebook circle-icon"></i>
-              <i class="fab fa-twitter circle-icon"></i>
-              <i class="fab fa-instagram circle-icon"></i>
-            </div>
-            <div class="footer-logo">
-              <h1>vigorizante</h1>
-            </div>
-            <div class="copyright">
-              <p>&copy; 2018 Vigorizante. All Rights Reserved</p>
-            </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="street">STREET</label>
+            <p class="profile-p">Al wuheida abu hail dubai</p>
           </div>
-        </footer>
+          <div class="form-group col-md-6">
+            <label for="address">2ND LINE ADDRESS</label>
+            <p class="profile-p">Abu dhabi</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="code">POST CODE</label>
+            <p class="profile-p">00000</p>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="city">LOCALITY/CITY</label>
+            <p class="profile-p">Dubai</p>
+          </div>
+        </div>
+        <div class="text-right mr-3">
+          <a href="#" class="update-profile"><i class="fas fa-pencil-alt"></i> update</a>
+          <a href="#" data-toggle="modal" data-target="#changePass" class="update-profile"><i class="fa fa-cog"></i> change password</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="content-box">
+    <div class="box-title">
+      <h3>Order History</h3>
+    </div>
+    <div class="address col-lg-12">
+      <div class="row">
+        <table class="table cart-table">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Order Id</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Product</th>
+              <td>23152</td>
+              <td>5</td>
+              <td>25-02-2018</td>
+            </tr>
+            <tr>
+              <th scope="row">Product</th>
+              <td>23152</td>
+              <td>5</td>
+              <td>25-02-2018</td>
+            </tr>
+            <tr>
+              <th scope="row">Product</th>
+              <td>23152</td>
+              <td>5</td>
+              <td>25-02-2018</td>
+            </tr>
+            <tr>
+              <th scope="row">Product</th>
+              <td>23152</td>
+              <td>5</td>
+              <td>25-02-2018</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-</header>
 
+    </div>
+  </section>
 
+  <!-- footer -->
 
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="footer-links">
+          <h4>contact us</h4>
+          <ul>
+            <li><a href="mailto:info@vigorizante.com">info@vigorizante.com</a></li>
+            <li><a href="#">+9741 263 562</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about-us.html">about us</a></li>
+            <li><a href="contact-us.html">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-links">
+          <h4>legal</h4>
+          <ul>
+            <li><a href="privacy.html">privacy policy</a></li>
+            <li><a href="terms.html">terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <i class="fab fa-facebook circle-icon"></i>
+      <i class="fab fa-twitter circle-icon"></i>
+      <i class="fab fa-instagram circle-icon"></i>
+    </div>
+    <div class="footer-logo">
+      <img src="assets/img/main-logo.png" alt="">
+    </div>
+    <div class="copyright">
+      <p>&copy; 2018 maxpower+. All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+<!-- footer -->
 <!-- change password -->
 <div class="modal fade bd-example-modal-lg" id="changePass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered all-modals-style" role="document">
@@ -320,11 +216,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>

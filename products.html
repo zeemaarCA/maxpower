@@ -5,13 +5,13 @@
   <base href="" />
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Vigorizante Products</title>
+  <title>Max Power + Products</title>
   <link rel="shortcut icon" type="image/png" href="favicon.ico" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/custom/style.min.css">
-  <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="assets/css/slick.css">
   <link rel="stylesheet" href="assets/css/slick-theme.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
@@ -19,959 +19,848 @@
 <body>
 
   <header>
-    <!-- <div class="back-logo">
-    <h1>Vigorizante</h1>
-  </div> -->
-  <div class="header-section">
-    <div class="row">
-      <div class="col-lg-3 pr-0 wow animated slideInLeft"  data-wow-delay="0.8s">
-        <div class="header-left">
-          <div class="scroll wow animated fadeIn" data-wow-delay="3.5s"></div>
-          <div class="menu-bar">
-            <span class="bars"></span>
-          </div>
-          <div class="logo">
-            <h1>Vigorizante</h1>
-          </div>
-          <div class="header-text">
-            <h1>Products</h1>
-            <!-- <div class="header-btn">
-            <button onclick="targrtLink()">See all products</button>
-          </div> -->
-        </div>
-        <div class="menu-side-overlay">
-          <div class="close-menu-icon">
-            <i class="far fa-times-circle"></i>
-            <div class="menu-bar-wrapper">
-              <div class="menu-links inner">
-                <ul>
-                  <li><a href="home.html">home</a></li>
-                  <li><a href="products.html">products</a></li>
-                  <li><a href="contact-us.html">contact us</a></li>
-                  <li><a href="about-us.html">about us</a></li>
-                  <li><a href="faq.html">FAQ's</a></li>
-                  <li><a href="terms.html">terms and conditions</a></li>
-                  <li><a href="privacy.html">privacy policy</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    <div class="button_container" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li><a href="home.html">home</a></li>
+          <li><a href="products.html">products</a></li>
+          <li><a href="contact-us.html">contact us</a></li>
+          <li><a href="about-us.html">about us</a></li>
+          <li><a href="faq.html">FAQ's</a></li>
+          <li><a href="terms.html">terms and conditions</a></li>
+          <li><a href="privacy.html">privacy policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="products-section-wrapper" id="targrtLink">
+    <div class="container product-area">
+      <div class="products-title">
+      <h1>All Products</h1>
+    </div>
+    <div class="container product-tabs">
+      <div class="row justify-content-center">
+        <div class="cat-btns w-100 text-center">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item col">
+              <a class="nav-link active" data-toggle="tab" href="#p1">Sachets</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" data-toggle="tab" href="#p2">Capsules</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" data-toggle="tab" href="#p3">Bottles</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" data-toggle="tab" href="#p4">Candies</a>
+            </li>
+            <li class="nav-item col">
+              <a class="nav-link" data-toggle="tab" href="#p5">Combo's</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="col-lg-9 pl-0">
-      <div class="header-right wow animated slideInRight"  data-wow-delay="0.8s">
-        <div class="login-link">
-          <a href="javascript:void(0)" class="login-btn">Login /</a><a href="javascript:void(0)" class="signup-btn"> Signup</a>
-        </div>
-        <div class="login-register-wrapper login-target">
-          <div class="close-login-icon">
-            <i class="far fa-times-circle"></i>
-          </div>
-          <div class="login-form">
-            <div class="form-title">
-              <h1>login</h1>
-            </div>
-            <form action="" class="login-sec">
-              <div class="form-field">
-                <input type="text" name="username" value="" placeholder="Username or email...">
-              </div>
-              <div class="form-field">
-                <input type="password" name="pass" value="" placeholder="Password...">
-              </div>
-              <button type="submit">login</button>
-              <div class="external-login">
-                <p>or login with</p>
-                <div class="social-login">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                </div>
-              </div>
-              <div class="ask-signup">
-                <p>not registered yet? <a href="javascript:void(0)" id="trigger-signup">Signup</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="login-register-wrapper signup-target">
-          <div class="close-login-icon">
-            <i class="far fa-times-circle"></i>
-          </div>
-          <div class="login-form">
-            <div class="form-title">
-              <h1>Signup</h1>
-            </div>
-            <form action="" class="signup-sec">
-              <div class="form-field">
-                <input type="text" name="username" value="" placeholder="Full Name...">
-                <i class="fas fa-asterisk" aria-hidden></i>
-              </div>
-              <div class="form-field">
-                <input type="text" name="username" value="" placeholder="Username">
-              </div>
-              <div class="form-field">
-                <input type="email" name="email" value="" placeholder="Email...">
-                <i class="fas fa-asterisk" aria-hidden></i>
-              </div>
-              <div class="form-field">
-                <input type="password" name="pass" value="" placeholder="Password">
-                <i class="fas fa-asterisk" aria-hidden></i>
-              </div>
-              <div class="form-field">
-                <input type="password" name="pass" value="" placeholder="Confirm Password">
-                <i class="fas fa-asterisk" aria-hidden></i>
-              </div>
-              <div class="form-field">
-                <select class="" name="">
-                  <option value="0">Select country code</option>
-                  <option value="0">+970</option>
-                  <option value="0">+546</option>
-                </select>
-              </div>
-              <div class="form-field">
-                <input type="number" name="number" value="" placeholder="Mobile Number">
-              </div>
-              <button type="submit">Signup</button>
-              <div class="ask-signup mt-lgg">
-                <p>already have an account? <a href="javascript:void(0)" id="trigger-login">Login</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="products-section-wrapper" id="targrtLink">
-          <div class="container product-area">
-            <!-- <div class="products-title">
-            <h1>All Products</h1>
-          </div> -->
-          <div class="container product-tabs">
-            <div class="row justify-content-center">
-              <div class="cat-btns w-100 text-center">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="nav-item col">
-                    <a class="nav-link active" data-toggle="tab" href="#p1">Sachets</a>
-                  </li>
-                  <li class="nav-item col">
-                    <a class="nav-link" data-toggle="tab" href="#p2">Capsules</a>
-                  </li>
-                  <li class="nav-item col">
-                    <a class="nav-link" data-toggle="tab" href="#p3">Bottles</a>
-                  </li>
-                  <li class="nav-item col">
-                    <a class="nav-link" data-toggle="tab" href="#p4">Candies</a>
-                  </li>
-                  <li class="nav-item col">
-                    <a class="nav-link" data-toggle="tab" href="#p5">Combo's</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="container tab-content products-box">
-            <!-- sachets -->
-            <div class="tab-pane active" id="p1">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/vigo-sachet.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>Sachets</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/vigo-sachet.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>Sachets</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/vigo-sachet.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>Sachets</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- capsules -->
-            <div class="tab-pane" id="p2">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-caps.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>capsules</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-caps.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>capsules</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-caps.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>capsules</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- bottle -->
-            <div class="tab-pane" id="p3">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-bottle.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>bottles</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-bottle.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>bottles</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-bottle.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>bottles</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- candy -->
-            <div class="tab-pane" id="p4">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-candy.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>candies</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-candy.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>candies</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/vigo-candy.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>candies</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- combo -->
-            <div class="tab-pane" id="p5">
-              <div class="row">
-                <!--combo sachet -->
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/Vigorizante_5sachets.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>5 Sachets</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/Vigorizante_10sachets.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>10 Sachets</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/Vigorizante_20sachets.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>20 Sachets</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/Vigorizante_30+5sachets.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>30 Sachets + 5 bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/Vigorizante_40+10sachets.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>40 Sachets + 10 bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/sachets/Vigorizante_60+20_sachets.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>60 Sachets + 20 bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- combo-caps -->
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/capsules/VIGORIZANTE_CAPS_2.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>2 Capsules</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/capsules/Vigorizante_10caps.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>10 Capsules</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/capsules/vigorizante_20caps.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>20 Capsules</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/capsules/VIGORIZANTE_CAPS_30+5BONUS.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>30 caps + 5 bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/capsules/VIGORIZANTE_CAPS_40+10BONUS.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>40 caps + 10 bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/capsules/VIGORIZANTE_CAPS_60+20BONUS.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>60 caps + 20 bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- combo bottles -->
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/bottles/Vigorizante_bottle_60+20capsule.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>60 caps + 20 bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/bottles/Vigorizante_bottle_120+60capsule.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>120 caps + 60 bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- combo dual -->
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/dual/vigorizante_10+10combos.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>10 caps + 10 sachets</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/dual/vigorizante_20+20combo.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>20 caps + 20 sachets</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/dual/vigorizante_30+10combo.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>30 caps & 10 Bonus + 30 sachets & 10 Bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/dual/Vigorizante_combo_40+20.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>40 caps & 20 Bonus + 40 sachets & 20 Bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="product-bg">
-                    <div class="product-box">
-                      <div class="product-img">
-                        <img src="assets/img/combo/dual/Vigorizante_60+30caps.png" alt="">
-                      </div>
-                      <div class="product-name">
-                        <h5>60 caps & 30 Bonus + 60 sachets & 30 Bonus</h5>
-                      </div>
-                      <div class="price-wishlist row">
-                        <div class="col">
-                          <button class="product-price">&euro;14.99</button>
-                        </div>
-                        <div class="col">
-                          <button class="wishlist"><i class="fas fa-heart"></i></button>
-                        </div>
-                      </div>
-                      <div class="addtocart-btn">
-                        <a href="#">add to cart</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-    <footer>
-      <div class="container">
+    <div class="container tab-content products-box">
+      <!-- sachets -->
+      <div class="tab-pane active" id="p1">
         <div class="row">
           <div class="col-lg-4">
-            <div class="footer-links">
-              <h4>contact us</h4>
-              <ul>
-                <li><a href="mailto:info@vigorizante.com">info@vigorizante.com</a></li>
-                <li><a href="#">+9741 263 562</a></li>
-              </ul>
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/max-caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>Sachets</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="footer-links">
-              <h4>Explore</h4>
-              <ul>
-                <li><a href="about-us.html">about us</a></li>
-                <li><a href="contact-us.html">contact us</a></li>
-              </ul>
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/max-caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>Sachets</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="footer-links">
-              <h4>legal</h4>
-              <ul>
-                <li><a href="privacy.html">privacy policy</a></li>
-                <li><a href="terms.html">terms and conditions</a></li>
-              </ul>
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/max-caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>Sachets</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <i class="fab fa-facebook circle-icon"></i>
-          <i class="fab fa-twitter circle-icon"></i>
-          <i class="fab fa-instagram circle-icon"></i>
-        </div>
-        <div class="footer-logo">
-          <h1>vigorizante</h1>
-        </div>
-        <div class="copyright">
-          <p>&copy; 2018 Vigorizante. All Rights Reserved</p>
         </div>
       </div>
-    </footer>
+      <!-- capsules -->
+      <div class="tab-pane" id="p2">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/max-caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>capsules</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/max-caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>capsules</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/max-caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>capsules</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottle -->
+      <div class="tab-pane" id="p3">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/vigo-bottle.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>bottles</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/vigo-bottle.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>bottles</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/vigo-bottle.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>bottles</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- candy -->
+      <div class="tab-pane" id="p4">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/vigo-candy.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>candies</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/vigo-candy.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>candies</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/vigo-candy.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>candies</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- combo -->
+      <div class="tab-pane" id="p5">
+        <div class="row">
+          <!--combo sachet -->
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/sachets/Vigorizante_5sachets.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>5 Sachets</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/sachets/Vigorizante_10sachets.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>10 Sachets</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/sachets/Vigorizante_20sachets.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>20 Sachets</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/sachets/Vigorizante_30+5sachets.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>30 Sachets + 5 bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/sachets/Vigorizante_40+10sachets.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>40 Sachets + 10 bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/sachets/Vigorizante_60+20_sachets.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>60 Sachets + 20 bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- combo-caps -->
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/capsules/VIGORIZANTE_CAPS_2.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>2 Capsules</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/capsules/Vigorizante_10caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>10 Capsules</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/capsules/vigorizante_20caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>20 Capsules</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/capsules/VIGORIZANTE_CAPS_30+5BONUS.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>30 caps + 5 bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/capsules/VIGORIZANTE_CAPS_40+10BONUS.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>40 caps + 10 bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/capsules/VIGORIZANTE_CAPS_60+20BONUS.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>60 caps + 20 bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- combo bottles -->
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/bottles/Vigorizante_bottle_60+20capsule.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>60 caps + 20 bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/bottles/Vigorizante_bottle_120+60capsule.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>120 caps + 60 bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- combo dual -->
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/dual/vigorizante_10+10combos.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>10 caps + 10 sachets</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/dual/vigorizante_20+20combo.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>20 caps + 20 sachets</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/dual/vigorizante_30+10combo.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>30 caps & 10 Bonus + 30 sachets & 10 Bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/dual/Vigorizante_combo_40+20.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>40 caps & 20 Bonus + 40 sachets & 20 Bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-bg">
+              <div class="product-box">
+                <div class="product-img">
+                  <img src="assets/img/combo/dual/Vigorizante_60+30caps.png" alt="">
+                </div>
+                <div class="product-name">
+                  <h5>60 caps & 30 Bonus + 60 sachets & 30 Bonus</h5>
+                </div>
+                <div class="price-wishlist row">
+                  <div class="col">
+                    <button class="product-price">&euro;14.99</button>
+                  </div>
+                  <div class="col">
+                    <button class="wishlist"><i class="fas fa-heart"></i></button>
+                  </div>
+                </div>
+                <div class="addtocart-btn">
+                  <a href="#">add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
-</header>
+<!-- footer -->
 
-
-
-
-
-
-
-
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="footer-links">
+          <h4>contact us</h4>
+          <ul>
+            <li><a href="mailto:info@vigorizante.com">info@vigorizante.com</a></li>
+            <li><a href="#">+9741 263 562</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about-us.html">about us</a></li>
+            <li><a href="contact-us.html">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-links">
+          <h4>legal</h4>
+          <ul>
+            <li><a href="privacy.html">privacy policy</a></li>
+            <li><a href="terms.html">terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <i class="fab fa-facebook circle-icon"></i>
+      <i class="fab fa-twitter circle-icon"></i>
+      <i class="fab fa-instagram circle-icon"></i>
+    </div>
+    <div class="footer-logo">
+      <img src="assets/img/main-logo.png" alt="">
+    </div>
+    <div class="copyright">
+      <p>&copy; 2018 maxpower+. All Rights Reserved</p>
+    </div>
+  </div>
+</footer>
+<!-- footer -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
