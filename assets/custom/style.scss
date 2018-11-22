@@ -139,6 +139,8 @@ header{
     padding-top: 25vh;
     .header-product-img{
       width: 90%;
+      margin: 0 auto;
+      text-align: center;
       img{
 
       }
@@ -562,7 +564,7 @@ header{
 
 
   .product-img{
-    text-align: right;
+    text-align: center;
     &:before{
       content: '';
       width: 100%;
@@ -889,7 +891,7 @@ footer{
 
 // cart-page
 .cart-section{
-  padding: 0 4rem 1rem 0;
+  padding: 0;
   margin-top: 2rem;
   .cart-title{
     text-align: center;
@@ -1245,3 +1247,25 @@ footer{
   }
 }
 // modals styling
+
+// responsive
+@media only screen and (min-width : 1024px) and (max-width : 1200px) {
+.sample-product{
+  .product-img{
+    width: 70%;
+    float: right;
+  }
+}
+.promo-section:after {
+  right: 0;
+  width: 530px;
+}
+
+
+}
+@media only screen and (min-width : 1200px) and (max-width : 1400px) {
+.logo {
+    margin-left: 4rem;
+  }
+}
+// responsive
