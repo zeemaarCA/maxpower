@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <base href="" />
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Max Power + Order Delivery</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
+  <link rel="stylesheet" href="../assets/custom/mobile.min.css">
+  <link rel="stylesheet" href="../assets/css/hamburgers.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <style>
+
+  body{
+    background-color: #fbfaf8;
+  }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid px-0 top-search">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="index.html">Delivery</a>
+        <!-- <a class="navbar-brand" href="index.html"><img src="../assets/img/mobile/logo2.png" alt=""></a> -->
+        <div class="nav-items">
+          <a href="login.html" class="login">Login</a>
+          <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </span>
+        <div id="side-menu" class="side-nav">
+          <div class="nav-head">
+            <h3><i class="fas fa-bars"></i> menu</h3>
+            <a href="#" class="btn-close" onclick="closeSlideMenu()"><i class="fas fa-times"></i></a>
+          </div>
+          <a href="index.html">Home</a>
+          <a href="profile.html">account</a>
+          <a href="store.html">shop</a>
+          <a href="ingredients.html">Ingrediants</a>
+          <a href="#">try for free</a>
+          <a href="#">money back guarentee</a>
+          <a href="faq.html">FAQ</a>
+          <a href="accreditation.html">accreditation</a>
+          <a href="about-us.html">about Max Power +</a>
+          <a href="contact-us.html">Contact us</a>
+          <a href="terms.html">terms and conditions</a>
+          <a href="privacy.html">privacy policy</a>
+        </div>
+      </nav>
+    </div>
+    <br>
+<div class="container account-form delivery">
+  <h4>Where should we deliver your order</h4>
+  <form>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="First Name and Last Name">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Email">
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Residence Number">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Street">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Locality / City">
+    </div>
+    <a href="#">create account</a>
+  </form>
+  <h4>Current shopping address</h4>
+  <div class="delivery-detail-box">
+    <div class="row align-items-center">
+      <div class="col">
+        <ul>
+          <li>KK</li>
+          <li>Dubai 550064</li>
+          <li>00000 - Dubai</li>
+          <li>UAE</li>
+        </ul>
+      </div>
+      <div class="col">
+        <a href="#">edit</a>
+      </div>
+    </div>
+  </div>
+  <h4>Shipping method</h4>
+  <div class="delivery-detail-box">
+    <div class="row align-items-center">
+      <div class="col-12 text-center">
+      <div class="custom-control custom-radio">
+        <input type="radio" id="ups-radio" name="customRadio" class="custom-control-input" checked>
+        <label class="custom-control-label" for="ups-radio"><img src="../assets/img/ups.png" alt=""></label>
+        <h5>ups international courier (1 to 3 days)</h5>
+      </div>
+      </div>
+      <div class="col-12 text-center">
+      <div class="custom-control custom-radio">
+        <input type="radio" id="ems-radio" name="customRadio" class="custom-control-input">
+        <label class="custom-control-label" for="ems-radio"><img src="../assets/img/ems.png" alt=""></label>
+        <h5>ems express delivery (3 to 5 days)</h5>
+        <h3>shipping is free for this month</h3>
+      </div>
+      </div>
+    </div>
+  </div>
+  <h4>payment method</h4>
+  <div class="delivery-detail-box">
+    <div class="row align-items-center">
+      <div class="col-12 text-center">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="paypal" name="customRadio3" class="custom-control-input" checked>
+          <label class="custom-control-label mb-4" for="paypal"><img src="../assets/img/checkoutb1.png" alt=""></label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="visa" name="customRadio3" class="custom-control-input">
+          <label class="custom-control-label" for="visa"><img src="../assets/img/checkoutb5.png" alt=""></label>
+        </div>
+        <p class="mt-4">Credit Card, Visa, Mastercard AND PAYPAL</p>
+        <p>After PLACING THE order you will be redirected to OUR payment PAGE.</p>
+        <p>The order will be DISPATCHED after PAYMENT HAS BEEN MADE.</p>
+        <p class="text-danger">Prices are displayed in your local currency, but payment is charged in Euros.</p>
+        <p class="text-danger mb-4">Please note that some credit card providers may charge currency conversion fees.</p>
+      </div>
+    </div>
+  </div>
+  <div class="next-back">
+    <div class="row">
+    <div class="col">
+      <a href="#">back</a>
+    </div>
+    <div class="col">
+      <!-- <a href="#" class="next">next</a> -->
+      <button type="button" class="next" name="button">next</button>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div style="height:34px;"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../assets/js/mobile.js"></script>
+
+
+</body>
+
+</html>
