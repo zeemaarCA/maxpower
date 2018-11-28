@@ -323,11 +323,11 @@ function ScrollHandler(pageId) {
     }
   });
 }
-// new ScrollHandler('header');
-// new ScrollHandler('samp-pro');
-// new ScrollHandler('promo-sec');
-// new ScrollHandler('best-sell');
-// new ScrollHandler('certi');
-// new ScrollHandler('footer');
+new ScrollHandler('header');
+new ScrollHandler('samp-pro');
+new ScrollHandler('promo-sec');
+new ScrollHandler('best-sell');
+new ScrollHandler('certi');
+new ScrollHandler('footer');
 
 // 100% height scroll
