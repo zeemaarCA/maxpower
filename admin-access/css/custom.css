@@ -1,0 +1,25 @@
+/* your styles go here */
+
+.table_pro_img_admin{
+  width: 7%!important;
+}
+.del-icon{
+  color: red!important;
+  font-size: 1.1rem;
+}
+.edit-icon{
+  font-size: 1.1rem;
+}
+
+.custom-toast{
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translate(0,-50%);
+  z-index: 10;
+  border-radius: 5px;
+}
+#remove_toast{
+  cursor: pointer;
+  margin-left: 8px;
+}

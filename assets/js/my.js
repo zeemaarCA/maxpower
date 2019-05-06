@@ -127,6 +127,104 @@ $(function () {
 // in view amimation
 
 
+$('#customer_signup').validate({ // initialize the plugin
+  rules: {
+    c_name: {
+      required: true
+    },
+    c_email: {
+      required: true,
+      email: true
+    },
+    c_pass: {
+      required: true,
+      minlength: 6
+
+    },
+    c_country: {
+      required: true
+    },
+    c_city: {
+      required: true
+    },
+    c_contact: {
+      required: true
+
+    },
+    c_code: {
+      required: true
+
+    },
+    c_address: {
+      required: true
+
+    }
+  },
+  messages: {}
+});
+
+$('#customer_login').validate({
+  rules: {
+    email: {
+      required: true,
+      email: true
+    },
+    pass: {
+      required: true
+    }
+  }
+});
+
+$('#admin_login').validate({
+  rules: {
+    email: {
+      required: true,
+      email: true
+    },
+    password: {
+      required: true
+    }
+  }
+});
+
+
+$('#change_password').validate({
+  rules: {
+    old_password: {
+      required: true,
+      minlength: 6
+    },
+    new_password: {
+      required: true,
+      minlength: 6
+    },
+    confirm_password: {
+      required: true,
+      minlength: 6
+    }
+  }
+});
+
+$('#change_profile').validate({
+  rules: {
+    customer_name: {
+      required: true
+    },
+    customer_country: {
+      required: true
+    },
+    customer_city: {
+      required: true
+    },
+    customer_contact: {
+      required: true
+    },
+    customer_address: {
+      required: true
+
+    }
+  }
+});
 
 
 
@@ -159,7 +257,20 @@ $(document).ready(function() {
   })
 });
 
+    // trigger-toast
+    $('.trigger-toast').click(function () {
+      $('.container-toast').addClass('visi-visible');
+      $('.rectangle').addClass('anim-toast');
+      $('.notification-text').addClass('anim-text');
+    });
 
+    $('#close-trigger').click(function () {
+      $('.container-toast').removeClass('visi-visible');
+      $('.rectangle').removeClass('anim-toast');
+      $('.notification-text').removeClass('anim-text');
+    });
+
+    // trigger-toast
 // google maps
 var map;
 
@@ -295,33 +406,33 @@ function ScrollHandler(pageId) {
     });
   }
 }
-  window.addEventListener('wheel', function(event) {
-    var viewStart = $(window).scrollTop();
-    if (!pageJump) {
-      var pageHeight = page.height();
-      var pageStopPortion = pageHeight / 2;
-      var viewHeight = $(window).height();
+  // window.addEventListener('wheel', function(event) {
+  //   var viewStart = $(window).scrollTop();
+  //   if (!pageJump) {
+  //     var pageHeight = page.height();
+  //     var pageStopPortion = pageHeight / 2;
+  //     var viewHeight = $(window).height();
 
-      var viewEnd = viewStart + viewHeight;
-      var pageStartPart = viewEnd - pageStart;
-      var pageEndPart = (pageStart + pageHeight) - viewStart;
+  //     var viewEnd = viewStart + viewHeight;
+  //     var pageStartPart = viewEnd - pageStart;
+  //     var pageEndPart = (pageStart + pageHeight) - viewStart;
 
-      var canJumpDown = pageStartPart >= 0;
-      var stopJumpDown = pageStartPart > pageStopPortion;
+  //     var canJumpDown = pageStartPart >= 0;
+  //     var stopJumpDown = pageStartPart > pageStopPortion;
 
-      var canJumpUp = pageEndPart >= 0;
-      var stopJumpUp = pageEndPart > pageStopPortion;
+  //     var canJumpUp = pageEndPart >= 0;
+  //     var stopJumpUp = pageEndPart > pageStopPortion;
 
-      var scrollingForward = event.deltaY > 0;
-      if (  ( scrollingForward && canJumpDown && !stopJumpDown)
-      || (!scrollingForward && canJumpUp   && !stopJumpUp)) {
-        event.preventDefault();
-        scrollToPage();
-      }
-    } else {
-      event.preventDefault();
-    }
-  });
+  //     var scrollingForward = event.deltaY > 0;
+  //     if (  ( scrollingForward && canJumpDown && !stopJumpDown)
+  //     || (!scrollingForward && canJumpUp   && !stopJumpUp)) {
+  //       event.preventDefault();
+  //       scrollToPage();
+  //     }
+  //   } else {
+  //     event.preventDefault();
+  //   }
+  // });
 }
 new ScrollHandler('header');
 new ScrollHandler('samp-pro');
