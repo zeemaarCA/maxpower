@@ -7,7 +7,7 @@ include 'header.php';
   <header>
  <?php include 'menu.php'; ?>
   </header>
-
+<!-- TODO: use email API -->
   <section class="cart-section h-100" id="targrtLink">
     <div class="contact-title">
       <h1>Contact Us</h1>
