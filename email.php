@@ -47,6 +47,6 @@ else {
   <input type="submit" value="Send" name="submit">
 </form>
 <body>
-  
+
 </body>
 </html>

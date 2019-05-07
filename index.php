@@ -126,7 +126,7 @@ include 'header.php';
                   <div class="addtocart-btn">
                     <a href="index.php?add_cart=<?php echo $pro_id; ?>">add to cart</a>
                   </div>
-                  <h4>&euro&euro;<?php echo $pro_price; ?></h4>
+                  <h4>&euro;<?php echo $pro_price; ?></h4>
                 </div>
               </div>
             </div>
