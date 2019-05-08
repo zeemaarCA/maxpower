@@ -1,4 +1,4 @@
-<!-- delete product from database -->
+<!-- delete user from database -->
 <?php
 include '../includes/conn.php';
 if (isset($_GET['del'])) {
