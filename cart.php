@@ -40,8 +40,12 @@ if (isset($_POST['update_cart'])) {
 
 <section class="cart-section" id="targrtLink">
   <div class="container">
-    <p class="bg-success text-white p-2 d-none <?php if (@$_GET['mes']) { echo 'd-block';};?>">
-      <?php if (@$_GET['mes']) { echo "Cart has been successfully upadated"; }; ?>
+    <p class="bg-success text-white p-2 d-none <?php if (@$_GET['mes']) {
+                                                  echo 'd-block';
+                                                }; ?>">
+      <?php if (@$_GET['mes']) {
+        echo "Cart has been successfully upadated";
+      }; ?>
     </p>
     <div class="cart-title">
       <h1>Cart</h1>
@@ -75,69 +79,74 @@ if (isset($_POST['update_cart'])) {
       <div class="row mx-0">
         <div class="table-responsive">
           <form class="w-100" action="" method="post" enctype="multipart/form-data">
-          <table class="table cart-table mb-0">
-            <thead>
-              <tr>
-                <th scope="col" width="35%">Product</th>
-                <th scope="col">Price</th>
-                <th scope="col" width="29%">Quantity</th>
-                <th scope="col">total</th>
-                <th scope="col">&nbsp;</th>
-              </tr>
-            </thead>
-            <?php
-            $total = 0;
-            global $con;
-            $ip = getIp();
-            $sel_price = "SELECT * FROM cart WHERE c_id = '" . $_SESSION['customer_id'] . "'";
-            $run_price = mysqli_query($con, $sel_price);
-            while ($p_price = mysqli_fetch_array($run_price)) {
-              $pro_id = $p_price['p_id'];
-              $qtyd = $p_price['qty'];
-              // echo $qtyd;
-              $pro_price = "SELECT * FROM products WHERE product_id = '$pro_id'";
-              $run_pro_price = mysqli_query($con, $pro_price);
-              while ($pp_price = mysqli_fetch_array($run_pro_price)) {
-                $product_price = array($pp_price['product_price']);
-                $single_price = $pp_price['product_price'];
-                $product_title = $pp_price['product_title'];
-                $product_image = $pp_price['product_image'];
-                $total_qty_price = $single_price * $qtyd;
-                $values = array_sum($product_price);
-                $mega_total = $values * $qtyd;
-                $total += $mega_total;
+            <table class="table cart-table mb-0">
+              <thead>
+                <tr>
+                  <th scope="col" width="35%">Product</th>
+                  <th scope="col">Price</th>
+                  <th scope="col" width="29%">Quantity</th>
+                  <th scope="col">total</th>
+                  <th scope="col">&nbsp;</th>
+                </tr>
+              </thead>
+              <?php
+              $total = 0;
+              global $con;
+              $ip = getIp();
+              $sel_price = "SELECT * FROM cart WHERE c_id = '" . $_SESSION['customer_id'] . "'";
+              $run_price = mysqli_query($con, $sel_price);
+              while ($p_price = mysqli_fetch_array($run_price)) {
+                $pro_id = $p_price['p_id'];
+                $qtyd = $p_price['qty'];
+                // echo $qtyd;
+                $pro_price = "SELECT * FROM products WHERE product_id = '$pro_id'";
+                $run_pro_price = mysqli_query($con, $pro_price);
+                while ($pp_price = mysqli_fetch_array($run_pro_price)) {
+                  $product_price = array($pp_price['product_price']);
+                  $single_price = $pp_price['product_price'];
+                  $product_title = $pp_price['product_title'];
+                  $product_image = $pp_price['product_image'];
+                  $total_qty_price = $single_price * $qtyd;
+                  $values = array_sum($product_price);
+                  $mega_total = $values * $qtyd;
+                  $total += $mega_total;
 
-                ?>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="item-img">
-                        <img src="includes/product_images/<?php echo $product_image; ?>" alt="">
-                        <p><?php echo $product_title; ?></p>
-                      </div>
-                    </td>
-                    <td>&euro;<?php echo $single_price; ?></td>
-                    <td>
-                      <div class="form">
-                        <div class="form-group">
-                          <div class="input-group">
-                            <span><button class="btn-inc-dec"><i class="fas fa-minus"></i></button></span>
-                            <input type="hidden" name="pro_id_cart_qty[]" value="<?php echo $pro_id; ?>" name="">
-                            <input type="number" class="input-number" name="qty[]" value="<?php echo $qtyd ?>" maxlength="2" min="1">
-                            <span><button class="btn-inc-dec"><i class="fas fa-plus"></i></button></span>
-
+                  ?>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="item-img">
+                          <img src="includes/product_images/<?php echo $product_image; ?>" alt="">
+                          <p><?php echo $product_title; ?></p>
+                        </div>
+                      </td>
+                      <td>&euro;<?php echo $single_price; ?></td>
+                      <td>
+                        <div class="form">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <input type="hidden" name="pro_id_cart_qty[]" value="<?php echo $pro_id; ?>">
+                              <div class="quantity-spinner">
+                                <button type="button" class="minus btn-inc-dec">
+                                  <span class="fa fa-minus"></span>
+                                </button>
+                                <input type="text" name="qty[]" value="<?php echo $qtyd ?>" class="prod_qty input-number">
+                                <button type="button" class="plus btn-inc-dec">
+                                  <span class="fa fa-plus"></span>
+                                </button>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </td>
-                    <td>&euro;<?php echo $total_qty_price; ?></td>
-                    <td><a href="cart.php?del=<?php echo $pro_id; ?>" class="remove" onClick="return confirm('Delete This item?')" name="del_product"><i class="far fa-times-circle"></i>
-                    </td>
-                  </tr>
-                <?php }
-            } ?>
-            </tbody>
-          </table>
+                      </td>
+                      <td>&euro;<?php echo $total_qty_price; ?></td>
+                      <td><a href="cart.php?del=<?php echo $pro_id; ?>" class="remove" onClick="return confirm('Delete This item?')" name="del_product"><i class="far fa-times-circle"></i>
+                      </td>
+                    </tr>
+                  <?php }
+              } ?>
+              </tbody>
+            </table>
         </div>
       </div>
       <div class="duo-btn">
@@ -150,7 +159,7 @@ if (isset($_POST['update_cart'])) {
           </div>
         </div>
       </div>
-          </form>
+      </form>
       <div class="content-box">
         <div class="box-title">
           <h3>cart total</h3>
