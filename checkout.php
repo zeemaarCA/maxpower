@@ -138,7 +138,7 @@ while ($p_price = mysqli_fetch_array($run_price)) {
     <div class="content-box">
       <div class="box-title">
         <h3>shipping billing address</h3>
-        <a href="#">edit</a>
+        <a href="profile.php">edit</a>
       </div>
       <div class="row">
         <p>current shopping address</p>
