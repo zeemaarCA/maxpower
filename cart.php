@@ -140,7 +140,7 @@ if (isset($_POST['update_cart'])) {
                         </div>
                       </td>
                       <td>&euro;<?php echo $total_qty_price; ?></td>
-                      <td><a href="cart.php?del=<?php echo $pro_id; ?>" class="remove" onClick="return confirm('Delete This item?')" name="del_product"><i class="far fa-times-circle"></i>
+                      <td><a href="cart.php?del=<?php echo $pro_id; ?>" class="remove" onClick="return confirm('Delete This item?')" name="del_product"><i class="far fa-times-circle"></i></a>
                       </td>
                     </tr>
                   <?php }
