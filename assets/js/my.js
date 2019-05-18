@@ -241,22 +241,6 @@ $('#change_profile').validate({
 	}
 
 
-
-// signup activation
-// var typed = new Typed(".banner-text", {
-//   strings: [
-//     "the best selling 100% Natural Sex supplements",
-//     "100% Natural, Herbal and Secure to Use"
-//   ],
-//   smartBackspace: true,
-//   typeSpeed: 50,
-//   backSpeed: 30,
-//   backDelay: 500,
-//   startDelay: 3000,
-//   loop: false
-// });
-
-
 // products animation
 $('.product-bg').each(function (i) {
   setTimeout(function () {
@@ -440,11 +424,63 @@ function initMap() {
 }
 
 // google maps
+// 100% height scroll
+
+function ScrollHandler(pageId) {
+  var page = $('#' + pageId);
+  if (page.length) {
+
+    var pageStart = page.offset().top;
+    var pageJump = false;
+
+
+    function scrollToPage() {
+      pageJump = true;
+      $('html, body').animate({
+        scrollTop: pageStart
+      }, {
+        duration: 50,
+        complete: function () {
+          pageJump = false;
+        }
+      });
+    }
+  }
+  window.addEventListener('wheel', function (event) {
+    var viewStart = $(window).scrollTop();
+    if (!pageJump) {
+      var pageHeight = page.height();
+      var pageStopPortion = pageHeight / 2;
+      var viewHeight = $(window).height();
+
+      var viewEnd = viewStart + viewHeight;
+      var pageStartPart = viewEnd - pageStart;
+      var pageEndPart = (pageStart + pageHeight) - viewStart;
+
+      var canJumpDown = pageStartPart >= 0;
+      var stopJumpDown = pageStartPart > pageStopPortion;
+
+      var canJumpUp = pageEndPart >= 0;
+      var stopJumpUp = pageEndPart > pageStopPortion;
+
+      var scrollingForward = event.deltaY > 0;
+      if ((scrollingForward && canJumpDown && !stopJumpDown) ||
+        (!scrollingForward && canJumpUp && !stopJumpUp)) {
+        event.preventDefault();
+        scrollToPage();
+      }
+    } else {
+      event.preventDefault();
+    }
+  });
+}
 new ScrollHandler('header');
 new ScrollHandler('samp-pro');
 new ScrollHandler('promo-sec');
 new ScrollHandler('best-sell');
 new ScrollHandler('certi');
 new ScrollHandler('footer');
+
+// 100% height scroll
 
 // 100% height scroll
